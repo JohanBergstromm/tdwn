@@ -1,0 +1,32 @@
+@-webkit-keyframes jumpy {
+  0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+}
+@-moz-keyframes jumpy {
+  0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+}
+@-o-keyframes jumpy {
+  0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+}
+@keyframes jumpy {
+  0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+}

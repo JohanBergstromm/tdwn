@@ -1,0 +1,11 @@
+<div class="news-select">
+    <span class="arrow"></span>
+    <select name="selected" form="selected-news">
+        {{#each data}}
+            <option value="{{this.id}}">{{this.name}}</option>
+        {{/each}}
+    </select>
+    <form action="" id="selected-news">
+      <button type="submit" id="go">Go!</button>
+    </form>
+</div>
