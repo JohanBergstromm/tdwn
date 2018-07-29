@@ -14,7 +14,6 @@ body {
     background-color: #f5f5f5;
 
     .header {
-        height: 70px;
         width: 100%;
         position: fixed;
         background-color: #333;
@@ -42,7 +41,6 @@ body {
         .logo {
             height: 50px;
             display: inline-block;
-            margin-top: 10px;
 
             img {
                 height: 100%;
@@ -59,6 +57,7 @@ body {
         display: flex;
 
         .intro {
+            margin-top: -5rem;
             @media only screen and(min-width: 768px) {}
 
             h1 {
@@ -107,6 +106,10 @@ body {
             .news-select {
                 width: 100%;
                 position: relative;
+                margin-top: 5rem; 
+                @media only screen and(min-width: 768px) {
+                    width: 80%;
+                }
 
                 .select {
                     position: relative;
@@ -118,6 +121,7 @@ body {
                         -moz-appearance: none;
                         -webkit-appearance: none;
                         -webkit-border-radius: 0px;
+                        font-family: 'Playfair Display', serif;
                         &:focus {
                             outline: none;
                         }
@@ -156,7 +160,7 @@ body {
     .result-wrap {
         font-size: 0;
         display: none;
-        padding: 95px 0 25px;
+        padding: 100px 0 25px;
         &:after {
             content: '';
             clear: both;

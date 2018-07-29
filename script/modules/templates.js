@@ -11,7 +11,7 @@ templates['selects'] = template({"1":function(container,depth0,helpers,partials,
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"news-select d-flex flex-wrap mt-4\">\n    <div class=\"select d-flex\">\n    	<span class=\"arrow\"></span>\n	    <select name=\"selected\" form=\"selected-news\" class=\"w-100 pl-2\">\n"
+  return "<div class=\"news-select d-flex flex-wrap\">\n    <div class=\"select d-flex\">\n    	<span class=\"arrow\"></span>\n	    <select name=\"selected\" form=\"selected-news\" class=\"w-100 pl-2\">\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.data : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	    </select>\n    </div>\n    <form action=\"\" id=\"selected-news\" class=\"mb-0 ml-2\">\n      <button type=\"submit\" id=\"go\">Go!</button>\n    </form>\n</div>";
 },"useData":true});
@@ -20,7 +20,7 @@ templates['top-news'] = template({"1":function(container,depth0,helpers,partials
 
   return "	<div class=\"col-12 col-md-6 d-flex\">\n		<a href=\""
     + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
-    + "\" target=\"_blank\" class=\"news-item p-0 d-flex flex-wrap\">\n		    <div class=\"img\" style=\"background-image: url('"
+    + "\" target=\"_blank\" class=\"news-item p-0 d-flex flex-wrap w-100\">\n		    <div class=\"img\" style=\"background-image: url('"
     + alias2(alias1((depth0 != null ? depth0.urlToImage : depth0), depth0))
     + "')\"></div>\n		    <div class=\"content\">\n		        <h3>"
     + alias2(alias1((depth0 != null ? depth0.title : depth0), depth0))
@@ -32,9 +32,9 @@ templates['top-news'] = template({"1":function(container,depth0,helpers,partials
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "<h2 class=\"news-title\">"
+  return "<div class=\"col-12\">\n	<h2 class=\"news-title\">"
     + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h2>\n<div class=\"d-flex flex-wrap\">\n"
+    + "</h2>\n</div>\n<div class=\"d-flex flex-wrap\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.data : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>";
 },"useData":true});
