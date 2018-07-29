@@ -42,7 +42,7 @@ function newsApi() {
 
             $('.result-wrap').html(template);
 
-            $('.selection-wrap, .intro').fadeOut(function() {
+            $('.content-wrap').fadeOut(function() {
                 $('time.timeago').timeago();
                 $('.result-wrap, .go-back').fadeIn();
             });
@@ -72,7 +72,7 @@ function goBack() {
             scrollTop: 0
         }, 200);
         $('.result-wrap, .go-back').fadeOut(function() {
-            $('.selection-wrap, .intro').fadeIn();
+            $('.content-wrap').fadeIn();
         });
     });
 }

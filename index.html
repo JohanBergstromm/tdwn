@@ -26,6 +26,7 @@
     <meta property="og:description" content="Top Daily Web News">
     <meta property="og:image" content="images/tdwn-b.png">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="dist/style.css">
     <script>
@@ -47,43 +48,49 @@
 </head>
 
 <body>
-    <div class="main-wrap">
+    <div class="main-wrap index">
         <div class="header">
-            <div class="go-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-        </div>
-        <div class="container-wrap">
-            <div class="intro">
-                <h1>Your daily dose of news from sites like <br><span class="newspapers"></span></h1>
-            </div>
-            <div class="selection-wrap">
-                <div class="loader">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="container">
+                <div class="go-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+                <div class="logo">
+                    <img src="images/logo.png">
                 </div>
             </div>
-            <div class="result-wrap">
-               
+        </div>
+        <div class="content-wrap">
+            <div class="center m-auto">
+                <div class="intro">
+                    <h1>Your daily dose of news from sites like <span class="newspapers"></span></h1>
+                </div>
+                <div class="selection-wrap">
+                    <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>
-            <div class="text-center">
-                <p>Copyright &copy; Top Daily Web News 2016 -
-                    <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                    </script>
-                </p>
-                <p><em>By: <a href="http://www.jbergstrom.se">Johan Bergstr&ouml;m</a></em></p>
-            </div>
-        </footer>
+        <div class="container">
+            <div class="result-wrap"></div>
+        </div>
     </div>
-    <script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+    <footer>
+        <div class="text-center">
+            <p>Copyright &copy; Top Daily Web News 2016 -
+                <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script>
+            </p>
+            <p><em>By: <a href="mailto:johans_820@hotmail.com">Johan Bergstr&ouml;m</a></em></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.timeago.js" ></script>
     <script type="text/javascript" src="js/typed.min.js" ></script>
     <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dist/script.js"></script>
 </body>
 

@@ -1,11 +1,13 @@
-<div class="news-select">
-    <span class="arrow"></span>
-    <select name="selected" form="selected-news">
-        {{#each data}}
-            <option value="{{this.id}}">{{this.name}}</option>
-        {{/each}}
-    </select>
-    <form action="" id="selected-news">
+<div class="news-select d-flex flex-wrap mt-4">
+    <div class="select d-flex">
+    	<span class="arrow"></span>
+	    <select name="selected" form="selected-news" class="w-100 pl-2">
+	        {{#each data}}
+	            <option value="{{this.id}}">{{this.name}}</option>
+	        {{/each}}
+	    </select>
+    </div>
+    <form action="" id="selected-news" class="mb-0 ml-2">
       <button type="submit" id="go">Go!</button>
     </form>
 </div>

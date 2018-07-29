@@ -16,9 +16,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
     "compile-templates": "handlebars templates/ -f script/modules/templates.js"
   },
   "author": "Johan Bergström",
