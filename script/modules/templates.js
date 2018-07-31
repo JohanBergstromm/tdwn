@@ -16,18 +16,18 @@ templates['selects'] = template({"1":function(container,depth0,helpers,partials,
     + "	    </select>\n    </div>\n    <form action=\"\" id=\"selected-news\" class=\"mb-0 ml-2\">\n      <button type=\"submit\" id=\"go\">Go!</button>\n    </form>\n</div>";
 },"useData":true});
 templates['top-news'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "	<div class=\"col-12 col-md-6 d-flex\">\n		<a href=\""
     + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
     + "\" target=\"_blank\" class=\"news-item p-0 d-flex flex-wrap w-100\">\n		    <div class=\"img\" style=\"background-image: url('"
     + alias2(alias1((depth0 != null ? depth0.urlToImage : depth0), depth0))
     + "')\"></div>\n		    <div class=\"content\">\n		        <h3>"
-    + alias2(alias1((depth0 != null ? depth0.title : depth0), depth0))
+    + ((stack1 = alias1((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "")
     + "</h3>\n		        <h6><time class=\"timeago\" datetime=\""
-    + alias2(alias1((depth0 != null ? depth0.publishedAt : depth0), depth0))
+    + ((stack1 = alias1((depth0 != null ? depth0.publishedAt : depth0), depth0)) != null ? stack1 : "")
     + "\"></time></h6>\n		        <p>"
-    + alias2(alias1((depth0 != null ? depth0.description : depth0), depth0))
+    + ((stack1 = alias1((depth0 != null ? depth0.description : depth0), depth0)) != null ? stack1 : "")
     + "</p>\n		    </div>\n		</a>\n	</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
