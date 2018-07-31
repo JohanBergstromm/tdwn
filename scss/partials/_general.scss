@@ -29,7 +29,7 @@ button:hover {
         text-align: center;
 
         .go-back {
-            font-size: 20px;
+            font-size: 1rem;
             color: #fff;
             position: absolute;
             top: 50%;
@@ -47,8 +47,11 @@ button:hover {
         }
 
         .logo {
-            height: 50px;
+            height: 30px;
             display: inline-block;
+            @media only screen and(min-width: 768px) {
+                height: 50px;
+            }
 
             img {
                 height: 100%;
@@ -241,6 +244,34 @@ button:hover {
                     text-decoration-color: #777;
                 }
             }
+        }
+    }
+
+    .go-back.button {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 3px 15px -1px #333;
+
+        &.active {
+            display: flex;
+        }
+
+        span {
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-right: 16px solid #fff;
+            border-bottom: 6px solid transparent;
+            margin-left: -5px;
         }
     }
 }
