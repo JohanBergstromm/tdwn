@@ -61,7 +61,7 @@ button:hover {
 
     .content-wrap {
         max-width: 1200px;
-        height: calc(100% - 58px);
+        height: 100%;
         margin: 0 auto;
         position: relative;
         padding: 70px 15px 0;
@@ -192,14 +192,14 @@ button:hover {
         .news-item {
             margin-bottom: 20px;
             border: 1px solid #e4e4e4;
-            box-shadow: 0px 4px 20px #cccccc;
+            box-shadow: 0px 0px 25px -2px #cccccc;
             border-radius: 5px;
             overflow: hidden;
             transition: all 200ms ease-in;
             background-color: #fff;
             min-height: 259px;
             &:hover {
-                box-shadow: 0px 4px 60px #cccccc;
+                box-shadow: 0px 0px 25px 2px #cccccc;
             }
 
             .img {

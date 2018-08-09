@@ -18,7 +18,7 @@ templates['selects'] = template({"1":function(container,depth0,helpers,partials,
 templates['top-news'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "	<div class=\"col-12 col-md-6 d-flex\">\n		<a href=\""
+  return "	<div class=\"col-12 col-lg-6 d-flex\">\n		<a href=\""
     + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
     + "\" target=\"_blank\" class=\"news-item p-0 d-flex flex-wrap w-100\">\n		    <div class=\"img\" style=\"background-image: url('"
     + alias2(alias1((depth0 != null ? depth0.urlToImage : depth0), depth0))
